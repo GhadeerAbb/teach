@@ -58,7 +58,6 @@ html
     text-decoration: none;
 }
 
-
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) 
 {
@@ -79,6 +78,8 @@ html
 {
 	background: url(pic/background2.png) fixed no-repeat 100%;
 	background-size: cover;
+	background-position: center;
+padding-bottom: 100px;
 }
 
 .ImgSection h1
@@ -88,11 +89,7 @@ html
 	margin-bottom: 50px;
 }
 
-.imgColumns
-{
-	margin-bottom: 500px;
-	
-}
+
 .BrakeLine
 {
 	height: 1px;
