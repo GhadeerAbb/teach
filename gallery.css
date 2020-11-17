@@ -1,0 +1,212 @@
+html
+{
+	height: 100%;	
+}
+
+.Body
+{
+	background-color: #1D0113;
+	font-family: 'Reem Kufi', sans-serif;
+	margin: 0px;
+	
+}
+
+.Body h1, .Body h5, .Body h6
+{
+	font-family: 'Reem Kufi', sans-serif;
+}
+
+.navbar
+{
+    transition: all;
+	transition-duration: 2s;
+	font-size: 20px;
+	text-align: right;
+}
+
+.navbar .nav-link 
+{
+    color: wheat;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus 
+{
+    color: wheat;
+    text-decoration: none;
+	font-size: 25px;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active
+{
+	-webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	background-color: dimgray;
+}
+
+.navbar.active .nav-link 
+{
+    color: wheat;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus 
+{
+    color: wheat;
+    text-decoration: none;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) 
+{
+    .navbar-toggler
+	{
+		color: wheat;
+	}
+
+    .navbar, .navbar .nav-link
+	{
+        color: wheat;
+    }
+}
+
+/******************** ImgSection ***************/
+
+.ImgSection
+{
+	background: url(pic/background2.png) fixed no-repeat 100%;
+	background-size: cover;
+}
+
+.ImgSection h1
+{
+	color: wheat;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.imgColumns
+{
+	margin-bottom: 500px;
+	
+}
+.BrakeLine
+{
+	height: 1px;
+	background-color: black;
+	box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+
+
+
+
+.row 
+{
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column 
+{
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img 
+{
+	margin-top: 10px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/******************** FooterSection ***************/
+.Footer
+{
+	background-color: #1D0113;
+	color: wheat;
+}
+
+.fa-youtube
+{
+	color: #bb0000;	
+	margin: 2px;
+    font-size: 50px;	
+}
+
+
+.fa-youtube:hover
+{
+	color: wheat;	
+}
+
+
+
+.slide 
+{
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide
+{
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide
+{
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+}
